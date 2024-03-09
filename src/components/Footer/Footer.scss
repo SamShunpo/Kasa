@@ -1,0 +1,33 @@
+.kasa-footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 209px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: 66px auto 29px auto;
+        align-content: center;
+        gap: 28px;
+
+        img {
+            width: 122px;
+            height: 40px;
+            margin: auto;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            height: 46px;
+            margin: auto;
+            font-size: 24px;
+            font-family: "Montserrat";
+        }
+    }
+
+}
