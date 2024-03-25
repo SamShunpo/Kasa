@@ -5,6 +5,7 @@ import Location from './pages/Location/Location'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import "@fontsource/montserrat"
+import ErrorPage from './pages/ErrorPage/ErrorPage'
 
  
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,8 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Location" element={<Location />} />
-                <Route path="/About" element={<About />} />
+                <Route path="/location/:id" element={<Location />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
                   </Router>
     </React.StrictMode>,
