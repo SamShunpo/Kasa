@@ -5,7 +5,7 @@ function Hero({ img, title }) {
 
     return (
         <div className="hero" style={{ backgroundImage: `url(${img})` }}>
-            <p>{title}</p>
+            <h1>{title}</h1>
         </div>
     );
 }
