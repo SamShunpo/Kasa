@@ -19,30 +19,38 @@ main {
             margin: 0;
             font-size: 36px;
             min-height: 51px;
-            font-family: $globalFont;
         }
 
         p {
             margin: 0;
             height: 26px;
-            font-family: $globalFont;
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 20px;
         }
     }
 
     .host {
         display: flex;
-        flex-direction: row;
+        justify-content: end;
         gap: 10px;
 
+
         p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             color: $colorRed;
             font-size: 18px;
             font-weight: 500;
             text-align: right;
-            line-height: 26px;
+            line-height: 20px;
             width: 93px;
             margin: 0;
-            font-family: $globalFont;
         }
 
         img {
@@ -50,4 +58,37 @@ main {
             width: 64px;
         }
     }
+
+    .ratingStar {
+        margin-top: 21px;
+    }
+
+    .collapse-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 72px;
+
+        article{
+            height: auto;
+
+            ul {
+                margin: auto;
+                padding: 0;
+    
+                li {
+                    list-style: none;
+                    font-size: 18px;
+                    line-height: 25px;
+                } 
+            }
+    
+            p {
+                color: $colorBlack;
+                max-width: 100%;
+                font-weight: 400;
+                margin: 0;
+                height: auto;
+            }
+        }
+        }  
 }
