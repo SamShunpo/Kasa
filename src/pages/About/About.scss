@@ -1,8 +1,17 @@
-.wrapper {
-    max-width: 1240px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-    margin-bottom: 38px;
+@import "../../styles/variable";
+
+
+.collapse {
+
+    article {
+        height: auto;
+    }
+
+    p {
+        color: $colorBlack;
+        max-width: 100%;
+        font-weight: 400;
+        margin: 0;
+        height: auto;
+    }
 }
