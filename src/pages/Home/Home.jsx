@@ -24,19 +24,17 @@ function Home() {
 
     return (
         <div>
-            <div className='wrapper'>
-                <Header />
-                <main>
-                    <Hero img={img1} title='Chez vous, partout et ailleurs'/>
-                    <section>
-                        {locations.map(({cover, title, id}) =>
-                            <Link key={id} to={`/location/${id}`} className='link'>
-                                <Thumb cover={cover} title={title} />
-                            </Link>
-                        )}
-                    </section>
-                </main>
-            </div>
+            <Header />
+            <main>
+                <Hero img={img1} title='Chez vous, partout et ailleurs' />
+                <section>
+                    {locations.map(({ cover, title, id }) =>
+                        <Link key={id} to={`/location/${id}`} className='link'>
+                            <Thumb cover={cover} title={title} />
+                        </Link>
+                    )}
+                </section>
+            </main>
             <Footer />
         </div>
     )
