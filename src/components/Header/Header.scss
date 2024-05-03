@@ -4,8 +4,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 45px 20px 50px 20px;
+    margin: 45px auto 50px auto;
     height: 68px;
+    max-width: 1280px;
+    padding: 20px;
 
     nav {
         display: flex;
@@ -17,7 +19,6 @@
             text-decoration: none;
             font-size: 24px;
             font-weight: 500;
-            font-family: $globalFont;
         }
     }
 }
