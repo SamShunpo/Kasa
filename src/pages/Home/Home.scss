@@ -13,3 +13,21 @@ section {
     }
 }
 
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Little devices (mobile, less/equal than 768px) */
+@media (max-width: 768px) {
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+}
