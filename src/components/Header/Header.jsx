@@ -5,27 +5,17 @@ import { useLocation } from 'react-router-dom';
 
 function Header() {
 
-    const styleSelected = {
-        color: 'black',
-        textDecoration: 'none',
-        fontSize: '24px',
-        fontWeight: '500',
-        fontFamily: 'Montserrat',
-    };
-
-    const styleUnselected = {
-        textDecoration: 'underline',
-    };
 
 return (
     <header className='kasa-header'>
-        <img src={logo} alt="Logo Kasa rouge" />
+        <img src={logo} alt="Logo Kasa rouge" className='logo'/>
         <nav>
-            <Link to="/" style={location.pathname === '/' ? {...styleSelected,...styleUnselected}: {styleSelected}}>Accueil</Link>
-            <Link to="/About" style={location.pathname === '/About'? {...styleSelected,...styleUnselected}: {styleSelected}}>A Propos</Link>
+            <Link to="/" className={`link ${location.pathname !== '/' ? 'styleSelected' :'styleUnselected'}`}>Accueil</Link>
+            <Link to="/About" className={`link ${location.pathname !== '/About' ? 'styleSelected' :'styleUnselected'}`}>A Propos</Link>
         </nav>
     </header>
 )
 }
 
 export default Header
+

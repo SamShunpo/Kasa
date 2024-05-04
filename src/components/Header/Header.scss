@@ -1,24 +1,49 @@
 @import "../../styles/variable";
 
-.kasa-header{
+.kasa-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 45px auto 50px auto;
-    height: 68px;
     max-width: 1280px;
     padding: 20px;
+
+    .logo {
+        width: 210px;
+        height: 68px;
+
+        @media (max-width: 768px) {
+            width: 145px;
+            height: 47px;
+        }
+    }
 
     nav {
         display: flex;
         column-gap: 57px;
         margin: auto 0px auto 0px;
-        
-        a {
-            color: $colorBlack;
-            text-decoration: none;
+
+        .link {
+            color: black;
             font-size: 24px;
-            font-weight: 500;
+            font-Weight: 500;
+
+            &.styleSelected {
+                text-decoration: none;
+            }
+
+            &.styleUnselected {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        @media (max-width: 768px) {
+            column-gap: 26px;
         }
     }
 }
