@@ -4,17 +4,15 @@
     font-family: $globalFont;
 }
 
-body {
-    padding: 45px 0 0 0;
-    margin: auto;
-    width: 100%;
+body,
+html,
+#root {
+    margin: 0;
+    height: 100%;
+}
 
-    main {
-        display: flex;
-        flex-direction: column;
-        max-width: 1240px;
-        width: 100%;
-        margin: auto;
-        padding: 0 20px;
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
 }

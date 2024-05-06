@@ -20,20 +20,23 @@ function About() {
     }, []);
 
     return (
-        <div className='about-page'>
-            <Header />
-            <main className="main-about-page"> 
-                <Hero img={img2} />
-                <div className='collapse'>
-                    {abouts.map((about, index) => (
-                        <Collapse key={index} title={about.title}>
-                            <p>{about.description}</p>
-                        </Collapse>
-                    ))}
-                </div>
-            </main>
+        <div className='global-about-page'>
+            <div className='about-page'>
+                <Header />
+                <main className="main-about-page">
+                    <Hero img={img2} />
+                    <div className='collapse'>
+                        {abouts.map((about, index) => (
+                            <Collapse key={index} title={about.title}>
+                                <p>{about.description}</p>
+                            </Collapse>
+                        ))}
+                    </div>
+                </main> 
+            </div >
             <Footer />
-        </div >
+        </div>
+
     );
 }
 

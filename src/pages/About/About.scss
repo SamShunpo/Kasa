@@ -1,30 +1,43 @@
 @import "../../styles/variable";
 
-.about-page {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
 
-    .main-about-page {
-        gap: 38px;
-    }
+.global-about-page{
 
-    .collapse {
+    height:100%;
 
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-        article {
-            height: auto;
+    .about-page {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 50px;
+        margin: auto;
+        max-width: 1240px;
+        height: calc(100% - 209px);
+    
+        .main-about-page {
+            gap: 38px;
         }
     
-        p {
-            color: $colorBlack;
-            max-width: 100%;
-            font-weight: 400;
-            margin: 0;
-            height: auto;
+        .collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1023px;
+        align-self: center;
+        width: 100%;
+    
+            article {
+                height: auto;
+            }
+        
+            p {
+                color: $colorBlack;
+                max-width: 100%;
+                font-weight: 400;
+                margin: 0;
+                height: auto;
+            }
         }
     }
+    
 }

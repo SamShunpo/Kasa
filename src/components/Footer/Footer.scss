@@ -4,32 +4,25 @@
     background-color: $colorBlack;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 209p;
+    justify-content: center;
+    padding: 66px 0 29px 0;
+    gap: 28px;
 
-    div {
+    img {
         display: flex;
-        flex-direction: column;
-        margin: 66px auto 29px auto;
-        align-content: center;
-        gap: 28px;
-
-        img {
-            width: 122px;
-            height: 40px;
-            margin: auto;
-        }
-
-        p {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            color: white;
-            height: 46px;
-            margin: auto;
-            font-size: 24px;
-            text-align: center;
-        }
+        width: 122px;
+        height: 40px;
+        margin: 0 auto;
     }
 
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        margin:auto;
+        height: 46px;
+        font-size: 24px;
+        text-align: center;
+    }
 }
