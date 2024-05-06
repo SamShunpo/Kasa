@@ -1,17 +1,30 @@
 @import "../../styles/variable";
 
+.about-page {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
 
-.collapse {
-
-    article {
-        height: auto;
+    .main-about-page {
+        gap: 38px;
     }
 
-    p {
-        color: $colorBlack;
-        max-width: 100%;
-        font-weight: 400;
-        margin: 0;
-        height: auto;
+    .collapse {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+        article {
+            height: auto;
+        }
+    
+        p {
+            color: $colorBlack;
+            max-width: 100%;
+            font-weight: 400;
+            margin: 0;
+            height: auto;
+        }
     }
 }

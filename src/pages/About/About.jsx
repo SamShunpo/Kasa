@@ -20,9 +20,9 @@ function About() {
     }, []);
 
     return (
-        <div>
+        <div className='about-page'>
             <Header />
-            <main>
+            <main className="main-about-page"> 
                 <Hero img={img2} />
                 <div className='collapse'>
                     {abouts.map((about, index) => (
