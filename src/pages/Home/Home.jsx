@@ -23,9 +23,10 @@ function Home() {
 
 
     return (
-        <div>
-            <Header />
-            <main>
+
+        <div className="home-page">
+            <Header/>
+            <main className='main-home-page'>
                 <Hero img={img1} title='Chez vous, partout et ailleurs' />
                 <section>
                     {locations.map(({ cover, title, id }) =>

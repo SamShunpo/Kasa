@@ -1,12 +1,29 @@
 @import "../../styles/variable";
 
 
-// main {
-//     align-items: center;
-//     display: flex;
-//     flex-direction: column;
+.main-page-error {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 
     h1 {
         font-size: 288px;
         color: $colorRed;
+        margin: auto;
+        text-align: center;
     }
+
+    p {
+        color: $colorRed;
+        font-size: 36px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .link-error-page {
+        color: $colorBlack;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
