@@ -10,6 +10,9 @@ article {
     align-items: end;
     cursor: pointer;
     
+    @media (max-width: 768px) {
+        height: 255px;
+    }
 
     h1 {
         color: #FFF;
