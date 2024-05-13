@@ -13,16 +13,30 @@
 
         .arrow_left {
             left: 24px;
+
+            @media (max-width: 768px) {
+                height: 24px;
+                width: 24px;
+            }
         }
 
         .arrow_right {
             right: 24px;
+
+            @media (max-width: 768px) {
+                height: 24px;
+                width: 24px;
+            }
         }
 
         .image_carrousel {
-            height: 415px;
             border-radius: 25px;
             object-fit: cover;
+            height: 415px;
+
+            @media (max-width: 768px) {
+                height: 255px;
+            }
         }
 
         p{
@@ -32,5 +46,9 @@
             left: 50%;
             font-size: 18px;
             font-weight: 500;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
 }

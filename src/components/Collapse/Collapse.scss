@@ -23,6 +23,10 @@
             font-size: 18px;
             font-weight: 700;
             height: auto;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
         }
 
         img {

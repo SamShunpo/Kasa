@@ -8,11 +8,10 @@
     .about-page {
         display: flex;
         flex-direction: column;
-        height: 100%;
         gap: 50px;
         margin: auto;
         max-width: 1240px;
-        height: calc(100% - 209px);
+        min-height: calc(100% - 209px);
     
         .main-about-page {
             gap: 38px;
@@ -25,6 +24,7 @@
         max-width: 1023px;
         align-self: center;
         width: 100%;
+        margin-bottom: 50px;
     
             article {
                 height: auto;

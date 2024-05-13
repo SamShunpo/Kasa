@@ -32,45 +32,48 @@ function Location() {
         return <h1>chargement...</h1>
 
     return (
-        <div>
-            <Header />
-            <main>
-                <Carrousel images={location.pictures} length={location.pictures.length} title={location.title} />
-                <div className='details'>
-                    <div className='title'>
-                        <h1>{location.title}</h1>
-                        <p>{location.location}</p>
-                        <div className='tags'>
-                            {location.tags.map((tag, index) =>
-                                <Tag key={`${index}-${tag}`} tagName={tag} />
-                            )}
+        <div className='global-location-page'>
+            <div className="location-page">
+                <Header />
+                <main className="main-location-page">
+                    <Carrousel images={location.pictures} length={location.pictures.length} title={location.title} />
+                    <section className='details'>
+                        <div className='title'>
+                            <h1>{location.title}</h1>
+                            <p>{location.location}</p>
+                            <div className='tags'>
+                                {location.tags.map((tag, index) =>
+                                    <Tag key={`${index}-${tag}`} tagName={tag} />
+                                )}
+                            </div>
                         </div>
+                        <div className='group-host'>
+                            <div className='host'>
+                                <p>{location.host.name}</p>
+                                <img src={location.host.picture} alt={`photo ${location.host.name}`} />
+                            </div>
+                            <div className='ratingStar'>
+                                <Rating rate={location.rating} max={5} />
+                            </div>
+                        </div>
+                    </section>
+                    <div className='collapse-location'>
+                        <Collapse title="Équipements">
+                            <ul>
+                                {
+                                    location.equipments.map(eq => (<li key={eq}>{eq}</li>))
+                                }
+                            </ul>
+                        </Collapse>
+                        <Collapse title="Description">
+                            <p>{location.description}</p>
+                        </Collapse>
                     </div>
-                    <div>
-                        <div className='host'>
-                            <p>{location.host.name}</p>
-                            <img src={location.host.picture} alt={`photo ${location.host.name}`} />
-                        </div>
-                        <div className='ratingStar'>
-                            <Rating rate={location.rating} max={5} />
-                        </div>
-                    </div>
-                </div>
-                <div className='collapse-location'>
-                    <Collapse title="Équipements">
-                        <ul>
-                            {
-                                location.equipments.map(eq => (<li key={eq}>{eq}</li>))
-                            }
-                        </ul>
-                    </Collapse>
-                    <Collapse title="Description">
-                        <p>{location.description}</p>
-                    </Collapse>
-                </div>
-            </main>
+                </main>
+            </div>
             <Footer />
         </div>
+
     )
 }
 
