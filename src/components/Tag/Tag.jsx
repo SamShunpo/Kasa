@@ -1,6 +1,6 @@
 import './Tag.scss';
 
-function Tag({tagName}) {
+function Tag({ tagName }) {
 
     return (
 

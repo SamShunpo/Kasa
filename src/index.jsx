@@ -7,7 +7,7 @@ import About from './pages/About/About'
 import "@fontsource/montserrat"
 import ErrorPage from './pages/ErrorPage/ErrorPage'
 
- 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <BrowserRouter>
