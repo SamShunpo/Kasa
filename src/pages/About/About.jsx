@@ -12,7 +12,7 @@ function About() {
 
     useEffect(() => {
         const getAbout = async () => {
-            const reponse = await fetch("http://localhost:5173/datas/about.json");
+            const reponse = await fetch("http://localhost:5175/datas/about.json");
             const data = await reponse.json();
             setAbouts(data);
         };

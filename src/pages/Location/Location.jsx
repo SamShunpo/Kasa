@@ -16,7 +16,7 @@ function Location() {
 
     useEffect(() => {
         const getLocation = async () => {
-            const reponse = await fetch("http://localhost:5173/datas/locations.json");
+            const reponse = await fetch("http://localhost:5175/datas/locations.json");
             const locations = await reponse.json();
             const foundLocation = locations.find((location) => id === location.id)
             if (foundLocation)
